@@ -49,10 +49,6 @@ const firstDiv = cardContainerRight.children[0];
     cardContainerRight.appendChild(firstDiv)
 })
 
-// const copyBtn = document.getElementById("btn-copy")
-// copyBtn.addEventListener('click',function(){
-//     alert("")
-// })
 
 const heartBtns = document.getElementsByClassName("btn-heart");
 const heartCount = document.getElementById("heart-count");
@@ -61,10 +57,16 @@ for(let btn of heartBtns){
         heartCount.innerText=Number(heartCount.innerText) + 1;
     })
 }
+
 const copyBtns = document.getElementsByClassName("btn-copy");
 const copyCount = document.getElementById("copy-count");
 for(let btn of copyBtns){
     btn.addEventListener("click",function(){
         copyCount.innerText=Number(copyCount.innerText) + 1;
+        alert("copied"); 
+        
     })
+
+    
+
 }
